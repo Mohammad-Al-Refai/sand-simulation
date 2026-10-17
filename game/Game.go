@@ -16,7 +16,8 @@ var (
 	SAND_COLOR2  = color.RGBA{214, 172, 98, 255}
 	WATER_COLOR1 = color.RGBA{52, 128, 220, 255}
 	WATER_COLOR2 = color.RGBA{72, 150, 235, 255}
-	WALL_COLOR   = color.RGBA{0, 100, 100, 255}
+	WALL_COLOR1  = color.RGBA{117, 117, 117, 255}
+	WALL_COLOR2  = color.RGBA{192, 192, 192, 255}
 )
 
 type Game struct {
@@ -43,7 +44,7 @@ func (g *Game) Draw(screen *ebiten.Image) {
 			case WATER:
 				cellColor = shade(row, col, WATER_COLOR1, WATER_COLOR2)
 			case WALL:
-				cellColor = WALL_COLOR
+				cellColor = shade(row, col, WALL_COLOR1, WALL_COLOR2)
 			}
 			vector.FillRect(screen,
 				float32(col*cs), float32(row*cs),
