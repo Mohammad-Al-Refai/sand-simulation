@@ -1,4 +1,4 @@
-### Sand simulation
+### Sand simulation ([Try web version](https://mohammad-al-refai.github.io/sand-simulation))
 
 https://github.com/user-attachments/assets/ae837dd8-a842-4e25-b6d9-4c83c3192252
 
